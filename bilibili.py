@@ -1,17 +1,17 @@
 import csv
+import os
 import time
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+
+from utils import create_diver, create_dir
 
 # 初始化浏览器
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')  # 不打开浏览器窗口
-options.add_argument('--disable-gpu')
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options) # 下载符合版本匹配的驱动，充当浏览器和Selenium的桥梁
+driver = create_diver()
+
+OUTPUT_DIR = create_dir()
+FILE_NAME = os.path.join(OUTPUT_DIR, "bilibili.csv")
 
 # 打开B站首页
 driver.get("https://www.bilibili.com/")
@@ -20,7 +20,7 @@ driver.get("https://www.bilibili.com/")
 time.sleep(5)
 
 # 模拟页面滚动，加载内容
-for _ in range(10): # 滚动10次
+for _ in range(10):  # 滚动10次
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(2)
 
@@ -30,9 +30,9 @@ videos = driver.find_elements(By.CSS_SELECTOR, ".bili-video-card")
 print(f"共找到{len(videos)}个视频")
 
 # 打开CSV文件准备写入
-with open("bilibili_videos.csv", "w", encoding="utf-8-sig", newline="") as f:
+with open(FILE_NAME, "w", encoding="utf-8-sig", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["标题", "封面图链接", "链接地址"]) # 标题名
+    writer.writerow(["标题", "封面图链接", "链接地址"])  # 标题名
 
     for i, video in enumerate(videos[:100]):
         try:

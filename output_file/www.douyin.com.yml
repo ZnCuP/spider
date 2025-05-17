@@ -1,0 +1,122 @@
+tag: html
+text: 验证码中间页
+children:
+- tag: head
+  text: 验证码中间页
+  children:
+  - tag: meta
+    attrs: !!python/object/new:bs4.element.AttributeDict
+      dictitems:
+        charset: !!python/object/new:bs4.element.CharsetMetaAttributeValue
+          args:
+          - utf-8
+          state:
+            original_value: utf-8
+  - tag: meta
+    attrs: !!python/object/new:bs4.element.AttributeDict
+      dictitems:
+        name: viewport
+        content: width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no
+  - tag: title
+    text: 验证码中间页
+  - tag: script
+    attrs: !!python/object/new:bs4.element.AttributeDict
+      dictitems:
+        charset: utf-8
+        nonce: argus-csp-token
+        src: https://lf-cdn-tos.bytescm.com/obj/static/sec_sdk_build/3.5.2/captcha/index.js
+  - tag: style
+    text: ".middle_page_loading{\n      width: 150px;\n      height: 15px;\n     \
+      \ margin: 0 auto;\n      position: absolute;\n      top: 45%;\n      left: 50%;\n\
+      \      transform: translate(-50%, -50%);\n  }\n  .middle_page_loading span{\n\
+      \      display: inline-block;\n      width: 15px;\n      height: 100%;\n   \
+      \   margin-right: 5px;\n      background: #323332;\n      -webkit-transform-origin:\
+      \ right bottom;\n      -moz-transform-origin: right bottom;\n      -ms-transform-origin:\
+      \ right bottom;\n      -o-transform-origin: right bottom;\n      transform-origin:\
+      \ right bottom;\n      -webkit-animation: load 1s ease infinite;\n      -moz-animation:\
+      \ load 1s ease infinite;\n      -ms-animation: load 1s ease infinite;\n    \
+      \  -o-animation: load 1s ease infinite;\n      animation: load 1s ease infinite;\n\
+      \  }\n  .middle_page_loading span:last-child{\n      margin-right: 0px; \n \
+      \ }\n  @keyframes load {\n    0%{\n          opacity: 1;\n      }\n      100%{\n\
+      \          opacity: 0;\n          -webkit-transform: rotate(90deg);\n      \
+      \    -moz-transform: rotate(90deg);\n          -ms-transform: rotate(90deg);\n\
+      \          -o-transform: rotate(90deg);\n          transform: rotate(90deg);\n\
+      \      }\n  }\n  @-webkit-keyframes load {\n    0%{\n          opacity: 1;\n\
+      \      }\n      100%{\n          opacity: 0;\n          -webkit-transform: rotate(90deg);\n\
+      \          -moz-transform: rotate(90deg);\n          -ms-transform: rotate(90deg);\n\
+      \          -o-transform: rotate(90deg);\n          transform: rotate(90deg);\n\
+      \      }\n  }\n  @-moz-keyframes load {\n      0%{\n          opacity: 1;\n\
+      \      }\n      100%{\n          opacity: 0;\n          -webkit-transform: rotate(90deg);\n\
+      \          -moz-transform: rotate(90deg);\n          -ms-transform: rotate(90deg);\n\
+      \          -o-transform: rotate(90deg);\n          transform: rotate(90deg);\n\
+      \      }\n  }\n  @-o-keyframes load {\n      0%{\n          opacity: 1;\n  \
+      \    }\n      100%{\n          opacity: 0;\n          -webkit-transform: rotate(90deg);\n\
+      \          -moz-transform: rotate(90deg);\n          -ms-transform: rotate(90deg);\n\
+      \          -o-transform: rotate(90deg);\n          transform: rotate(90deg);\n\
+      \      }\n  }\n  @-ms-keyframes load {\n      0%{\n          opacity: 1;\n \
+      \     }\n      100%{\n          opacity: 0;\n          -webkit-transform: rotate(90deg);\n\
+      \          -moz-transform: rotate(90deg);\n          -ms-transform: rotate(90deg);\n\
+      \          -o-transform: rotate(90deg);\n          transform: rotate(90deg);\n\
+      \      }\n  }\n  .middle_page_loading span:nth-child(1){\n      -webkit-animation-delay:\
+      \ 0.13s;\n      -moz-animation-delay: 0.13s;\n      -ms-animation-delay: 0.13s;\n\
+      \      -o-animation-delay: 0.13s;\n      animation-delay: 0.13s;\n  }\n  .middle_page_loading\
+      \ span:nth-child(2){\n      -webkit-animation-delay: 0.26s;\n      -moz-animation-delay:\
+      \ 0.26s;\n      -ms-animation-delay: 0.26s;\n      -o-animation-delay: 0.26s;\n\
+      \      animation-delay: 0.26s;\n  }\n  .middle_page_loading span:nth-child(3){\n\
+      \      -webkit-animation-delay: 0.39s;\n      -moz-animation-delay: 0.39s;\n\
+      \      -ms-animation-delay: 0.39s;\n      -o-animation-delay: 0.39s;\n     \
+      \ animation-delay: 0.39s;\n  }\n  .middle_page_loading span:nth-child(4){\n\
+      \      -webkit-animation-delay: 0.52s;\n      -moz-animation-delay: 0.52s;\n\
+      \      -ms-animation-delay: 0.52s;\n      -o-animation-delay: 0.52s;\n     \
+      \ animation-delay: 0.52s;\n  }\n  .middle_page_loading span:nth-child(5){\n\
+      \      -webkit-animation-delay: 0.65s;\n      -moz-animation-delay: 0.65s;\n\
+      \      -ms-animation-delay: 0.65s;\n      -o-animation-delay: 0.65s;\n     \
+      \ animation-delay: 0.65s;\n  }"
+- tag: body
+  children:
+  - tag: div
+    attrs: !!python/object/new:bs4.element.AttributeDict
+      dictitems:
+        id: root
+  - tag: div
+    attrs: !!python/object/new:bs4.element.AttributeDict
+      dictitems:
+        class: !!python/object/new:bs4.element.AttributeValueList
+          listitems:
+          - middle_page_loading
+    children:
+    - tag: span
+    - tag: span
+    - tag: span
+    - tag: span
+    - tag: span
+  - tag: script
+    attrs: !!python/object/new:bs4.element.AttributeDict
+      dictitems:
+        nonce: argus-csp-token
+    text: "function parseCookie() {\n      var obj = document.cookie.split(';')\n\
+      \        .filter(function(item) {\n          return !!item.trim();\n       \
+      \ })\n        .reduce(function(obj, item) {\n          var pairs = item.split('=');\n\
+      \          var key = pairs[0] && pairs[0].trim();\n          var val = pairs[1]\
+      \ && pairs[1].trim();\n          obj[key] = val;\n          return obj;\n  \
+      \      }, {});\n      return obj;\n    }\n    function setCookie(name, value)\
+      \ {\n      try {\n        if (window.sessionStorage) {\n          if (!window.sessionStorage.getItem(name))\
+      \ {\n            window.sessionStorage.setItem(name, value)\n          }\n \
+      \       }\n        if (window.localStorage) {\n          if (!window.localStorage.getItem(name))\
+      \ {\n            window.localStorage.setItem(name, value)\n          }\n   \
+      \     }\n        if (!!!parseCookie()[name]) {\n          document.cookie =\
+      \ name + \"=\" + value + \";\";\n        }\n      } catch (e) { }\n    }\n \
+      \   setCookie(\"__ac_referer\", document.referrer || \"__ac_blank\");\n    const\
+      \ options = {\n      commonOptions: {\n        aid: 6383,\n        iid: '0',\n\
+      \        did: '0',\n      },\n      captchaOptions: {\n        ele: 'root',\n\
+      \        hideCloseBtn: true,\n        showMode: 'mask',\n        successCb:\
+      \ function(){\n          setTimeout(() => {\n            location.reload();\n\
+      \          }, 2000)\n        },\n      },\n    }\n    const verify_data = {\"\
+      code\":\"10000\",\"from\":\"\",\"type\":\"verify\",\"version\":\"\",\"region\"\
+      :\"cn\",\"subtype\":\"slide\",\"ui_type\":\"\",\"detail\":\"M3cK0t1X9Tf0QEBDnzr6-SJr4qNMwzz7co-duVqnE61bInBtebzyBQECIqJ0r74ib*ZAiySwnUIrtoGe0hTgylhrKaBQteSzijYcIlzLBNJjbm6bwzl4NIRAqdrdAn80ToNVDi2qYMhfXTU2Nyazww43UoPAorvLY0Bi0vXr37sg8Eb2yoI0zyqVxs-G8RdFWVjzscqZFAYKviPssNNCmgxo3gvvXXaQSG3ILSCQj7SaBbYASleL*yN5SzVd4PjZtTQYr2OuZIBhaPRL-k8hip8dW6ZISD-SzaXd1DWZQYvf06qP4ZkAGQXdaTUSXBarxoeLbNdfTmhgXiR6WslzA8AM7VNvwfv0JCp3pvsN*WYnWTuD*A3-xwpBhH77FDDWolQk1lrts4Zc7Gr9sdw2vRNM6AFIHOD4eb*ExPPla-dpoBY4I0KZMbqkWQ..\"\
+      ,\"verify_event\":\"15716\",\"fp\":\"verify_mas4i61t_oy8jMotW_jj9i_4rb1_89Ty_LqzP4aoZBJpW\"\
+      ,\"server_sdk_env\":\"{\\\"idc\\\":\\\"lf\\\",\\\"region\\\":\\\"CN\\\",\\\"\
+      server_type\\\":\\\"whale\\\"}\",\"log_id\":\"202505171907328E6229676018E6925DF7\"\
+      ,\"is_assist_mobile\":false,\"is_complex_sms\":false,\"identity_action\":\"\"\
+      ,\"identity_scene\":\"\",\"login_status\":0,\"aid\":0}\n    window.TTGCaptcha.init(options)\n\
+      \    window.TTGCaptcha.render({\n        verify_data\n    })"
